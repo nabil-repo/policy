@@ -80,16 +80,16 @@
       a user account and are not used to store payment-card information.</p>
 
     <h2>Tileset and map data services</h2>
-    <p>The Application uses Cesium for Unity to process and render tileset data. The
-      current scene is configured to request Cesium World Terrain from Cesium ion
-      (ion asset ID 1) and may request raster imagery from the configured EOX tile
-      service. These services may receive your IP address, device and request
-      information needed to deliver the tileset or imagery. Cesium for Unity is also
-      used as the in-app data-processing and rendering library.</p>
+    <p>The Application uses Cesium for Unity to process and render globe data. The
+      current scene uses the WGS84 ellipsoid as its base surface and generates
+      selected landmark elevations locally in the Application. It may also request
+      raster imagery from the configured EOX tile service. EOX may receive your IP
+      address, device, and request information needed to deliver imagery. Cesium for
+      Unity is used as the in-app globe-processing and rendering library; the
+      Application does not request Cesium ion terrain for this scene.</p>
     <ul>
       <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
       <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Privacy Policy</a></li>
-      <li><a href="https://www.cesium.com/legal/privacy-policy/">Cesium Privacy Policy</a></li>
       <li><a href="https://s2maps.eu/">EOX Maps</a></li>
     </ul>
 
@@ -101,8 +101,8 @@
 
     <h2>Sharing and third-party processing</h2>
     <p>We do not sell your personal information. Information may be processed by
-      service providers acting for us, including Google, Unity, Cesium ion, EOX Maps,
-      and app stores.
+      service providers acting for us, including Google, Unity, EOX Maps, and app
+      stores.
       Information may also be disclosed when
       required by law or when reasonably necessary to protect users, the Application,
       or our rights. These providers may use information according to their own
